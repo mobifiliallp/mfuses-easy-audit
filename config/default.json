@@ -1,0 +1,21 @@
+{
+  "appName": "mfuses-easy-audit",
+  "logger": {
+    "level": "info"
+  },
+  "mongodb": {
+    "url": "mongodb://localhost:27017",
+    "options": {
+      "auth": {
+        "user": "",
+        "password": ""
+      }
+    }
+  },
+  "usMoleculer": {
+    "config": {
+      "namespace": "mfuses-ns"
+    }
+  },
+  "auditLogCollectionName": "auditLog"
+}

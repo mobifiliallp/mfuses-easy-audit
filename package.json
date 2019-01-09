@@ -1,0 +1,44 @@
+{
+  "name": "mfuses-easy-audit",
+  "version": "1.0.0",
+  "description": "MFuSes - Easy audit module - Create easy and detailed audit records.",
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha --timeout 20000",
+    "start": "node main.js"
+  },
+  "keywords": [
+    "Moleculer",
+    "API",
+    "MongoDB",
+    "Microservice",
+    "Audit",
+    "Mobifilia"
+  ],
+  "author": "Kedar Potnis <kedar.potnis@mobifilia.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "config": "^3.0.1",
+    "mf-db-mongo": "git+https://github.com/mobifiliallp/mf-db-mongo.git#semver:^v1.0.0",
+    "mf-logwrapper": "git+https://github.com/mobifiliallp/mf-logwrapper.git#semver:^1.0.0",
+    "mfuses-moleculer": "git+https://github.com/mobifiliallp/mfuses-moleculer.git#semver:^v1.0.0",
+    "moleculer-web": "^0.6.4",
+    "nats": "^1.0.0",
+    "uuid": "^3.2.1"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=6.1.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "eslint-config-mfnode": "git+https://github.com/mobifiliallp/eslint-config-mfnode.git#semver:^1.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-mfnode"
+  }
+}
