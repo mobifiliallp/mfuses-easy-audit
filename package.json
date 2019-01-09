@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha --timeout 20000",
-    "start": "node main.js"
+    "start": "node main.js",
+    "bump": "bump --prompt",
+    "bump-push": "echo \"*** Will tag commit and push to git ***\";bump --prompt --tag --commit --push --grep private/versionInfo.json"
   },
   "keywords": [
     "Moleculer",
@@ -33,10 +35,11 @@
   },
   "private": true,
   "devDependencies": {
-    "eslint-config-mfnode": "git+https://github.com/mobifiliallp/eslint-config-mfnode.git#semver:^1.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-config-mfnode": "git+https://github.com/mobifiliallp/eslint-config-mfnode.git#semver:^1.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "version-bump-prompt": "^4.2.2"
   },
   "eslintConfig": {
     "extends": "eslint-config-mfnode"
